@@ -1,0 +1,15 @@
+<- Vertx ----------------------------------------------------------------------
+
+function doc will explain to you methods application.
+
+get[X,Y,Z,W,Color], will show you private attributes informations.
+
+set[X,Y,Z,W,Color], will let you change private attributes informations.
+
+construct will change/create your attributes informations.
+
+Verbose will show destruct/construct infos.
+
+toString will show general informations about attributes after modif
+
+---------------------------------------------------------------------- Vertex ->
