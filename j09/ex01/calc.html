@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calc</title>
+         <meta charset="utf-8">
+        <style>
+        #calc {
+        	width: 300px;
+        	height: 400px;
+        	border: 1px solid black;
+        	margin: auto;
+        	border-radius: 5px;
+        }
+        #right {
+        	width: 80px;
+        	height: 20px;
+        	float: right;
+        }
+         #left {
+        	width: 80px;
+        	height: 20px;
+        	float: left;
+        }
+        #op{
+        	width: 40px;
+        	height: 100px;
+        	margin: auto;
+        	border: 1px solid black;
+        	float: left;
+        }
+	    </style>
+    </head>
+    <body>
+    	<script>
+    		setInterval(function(){alert("Please, use me ...");}, 30000);
+    		function calc(){
+    			var nb1 = document.getElementById('left').value;
+    			var nb2 = document.getElementById('right').value;
+    			var select = document.getElementById('op');
+    			var op = select.options[select.selectedIndex].value;
+
+    			nb1 = parseInt(nb1);
+    			nb2 = parseInt(nb2);
+    			if (nb1 < 0 || nb2 < 0)
+    				alert('ERROR :(');
+    			else if (nb2 == 0 && (op == 4 || op == 5))
+    				alert("It's over 9000 !");
+    			else
+    			{
+    				if (op == 1)
+    					var result = nb1 + nb2;
+    				else if (op == 2)
+    					var result = nb1 - nb2;
+    				else if (op == 3)
+    					var result = nb1 * nb2;
+    				else if (op == 4)
+    					var result = nb1 / nb2;
+    				else if (op == 5)
+    					var result = nb1 % nb2;
+    				console.log(result);
+    				alert(result);
+    			}
+    		}
+   	    </script>
+    	<div id="calc">
+    		<input id="right" type="text"></input>
+    		<input id="left" type="text"></input>
+    		<select id="op" size="5">
+    			<option value="1">+</option>
+    			<option value="2">-</option>
+    			<option value="3">*</option>
+    			<option value="4">/</option>
+    			<option value="5">%</option>
+    		</select>
+    		<input type="submit" value="Try me!" onclick="calc()"></input>
+    	</div>
+    </body>
+</html>

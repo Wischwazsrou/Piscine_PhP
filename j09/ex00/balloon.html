@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Balloon</title>
+        <style type="text/css">
+        #balloon {
+        	width: 200px;
+        	height: 200px;
+        	background-color: red;
+        	margin: auto;
+        	border-radius: 100%;
+        }
+	    </style>
+    </head>
+    <body>
+    	<script>
+	    	function color(){
+	    		var elem = document.getElementById('balloon');
+	    		var height = document.getElementById('balloon').offsetHeight;
+	    		var width = document.getElementById('balloon').offsetHeight;
+
+	    		if (elem.style.backgroundColor == "red"){
+	    			elem.style.backgroundColor = "green";
+	    		}
+	    		else if (elem.style.backgroundColor == "green"){
+	    			elem.style.backgroundColor = "blue";
+	    		}
+
+	    		else{
+	    			elem.style.backgroundColor = "red";
+	    		}
+	    		if (height == 420){
+	    			height = 200;
+	    			width = 200;
+	    		}
+	    		else{
+	    			height += 10;
+	    			width += 10;
+	    		}
+	    		elem.style.height = height + "px";
+	    		elem.style.width = width + "px";
+	    	}
+	    	function reverse_color(){
+	    		var elem = document.getElementById('balloon');
+	    		var height = document.getElementById('balloon').offsetHeight;
+	    		var width = document.getElementById('balloon').offsetHeight;
+
+	    		if (elem.style.backgroundColor == "red"){
+	    			elem.style.backgroundColor = "blue";
+	    		}
+	    		else if (elem.style.backgroundColor == "green"){
+	    			elem.style.backgroundColor = "red";
+	    		}
+
+	    		else{
+	    			elem.style.backgroundColor = "green";
+	    		}
+	    		if (height > 200)
+	    		{
+		    		height -= 5;
+		    		width -= 5;
+		    		elem.style.height = height + "px";
+		    		elem.style.width = width + "px";
+		    	}
+	    	}
+	    </script>
+    	<div id="balloon" onclick="color()" onmouseout="reverse_color()">
+    	</div>
+    </body>
+</html>
