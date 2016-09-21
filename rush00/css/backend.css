@@ -1,0 +1,120 @@
+#admin_content
+{
+	margin: auto;
+	position: relative;
+	margin-top: 60px;
+}
+
+.admin_form
+{
+	/* margin: auto; */
+	position: absolute;
+	/* top: 100px; */
+	left: 100px;
+	padding-left: 0;
+	/* border: 1px solid red; */
+	width: 500px;
+}
+
+.admin_form form
+{
+	width: 600px;
+	margin: 0;
+	margin-top: 30px;
+	height: 300px;
+	position: relative;
+}
+
+#admin_content ul
+{
+	list-style-type: none;
+}
+
+#admin_menu
+{
+	border-right: 2px solid black;
+	width: 80px;
+	height: 120px;
+	float: left;
+	margin-left: 20px;
+	/* margin-top: 20px; */
+}
+
+#admin_menu ul li
+{
+	margin-bottom: 5px;
+}
+
+#admin_menu_action
+{
+	margin-left: 20px;
+	float: left;
+	text-align: center;
+}
+
+#admin_menu_action ul
+{
+	height: 120px;
+	line-height: 120px;
+}
+
+#admin_menu_action ul li
+{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+	vertical-align: middle;
+	margin-right: 10px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, rgba(182,224,38,1) 0%,rgba(171,220,40,1) 100%);
+}
+
+#admin_menu_action ul li a
+{
+	color: white;
+	font-weight: bold;
+}
+
+#title
+{
+	float: left;
+	font-size: 5em;
+	color: #b3b3b3;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.admin_form
+{
+	position: inherit;
+	text-align: ;
+	margin: relative;
+	float: left:
+}
+
+.admin_form .input_label
+{
+	margin-bottom: 20px;
+}
+
+.admin_popup_position div 
+{
+	position: absolute;
+	top: -100px;
+}
+
+#register_user
+{
+	position: absolute;
+	top: 0;
+	right: -350px;
+	width: 150px;
+	padding: 10px;
+}
+
+#register_user p
+{
+	text-align: center;
+	font-weight: bold;
+}

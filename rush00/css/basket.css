@@ -1,0 +1,64 @@
+.basket_entry
+{
+	height: 150px;
+	line-height: 150px;
+	position: relative;
+}
+
+.basket_entry div
+{
+	display: inline-block;
+	height: 150px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.basket_item_img
+{
+	width: 200px;
+	border: 1px solid black;
+}
+
+.basket_item_desc .basket_item_name
+{
+	position: absolute;
+	top: -50px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.basket_item_desc .basket_item_type
+{
+	position: absolute;
+	top: -25px;
+}
+
+.basket_item_price
+{
+	position: absolute;
+	top: 10px;
+	left: 800px;
+	color: #ff4d4d;
+	font-weight: bold;
+}
+
+.basket_delete
+{
+	position: absolute;
+	bottom: -50px;
+	font-size: 0.8em;
+	height: 10px;
+	width: 30px;
+}
+
+.basket_delete a
+{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+
+.basket_delete a:hover
+{
+	color: red;
+}
